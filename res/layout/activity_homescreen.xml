@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/image_raeume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="83dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/image_elektronik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_raeume"
+        android:layout_marginLeft="56dp"
+        android:layout_toRightOf="@+id/image_raeume"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/image_beleuchtung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_raeume"
+        android:layout_alignTop="@+id/image_statistik"
+        android:src="@drawable/ic_launcher" />
+    
+    <ImageButton
+        android:id="@+id/image_statistik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_elektronik"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+    
+    <ImageButton
+        android:id="@+id/image_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_beleuchtung"
+        android:layout_below="@+id/image_beleuchtung"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/image_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_statistik"
+        android:layout_alignTop="@+id/image_option"
+        android:src="@drawable/ic_launcher" />
+
+
+</RelativeLayout>

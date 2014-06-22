@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Einrichtung"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/text_servicename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/text_servicename"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edittext_servicename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_servicename"
+        android:layout_below="@+id/text_servicename"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/text_localip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edittext_servicename"
+        android:layout_below="@+id/edittext_servicename"
+        android:layout_marginTop="46dp"
+        android:text="@string/text_localip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edittext_localip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_localip"
+        android:layout_below="@+id/text_localip"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/text_exturl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_localip"
+        android:layout_below="@+id/edittext_localip"
+        android:layout_marginTop="51dp"
+        android:text="@string/text_exturl"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edittext_exturl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_exturl"
+        android:layout_below="@+id/text_exturl"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/edittext_exturl"
+        android:layout_marginBottom="41dp"
+        android:text="@string/button_next" />
+
+</RelativeLayout>
